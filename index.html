@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晨屋農場 | Link in Bio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+            /* 背景圖：請記得將你的溫室照片命名為 bg.jpg 放在同個倉庫 */
+            background: linear-gradient(rgba(34, 54, 44, 0.5), rgba(34, 54, 44, 0.5)), url('bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* 霧面玻璃外殼 */
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 35px 24px;
+            border-radius: 28px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        /* 圓形大頭貼 */
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            /* 大頭貼：請記得將你的哈密瓜照片命名為 avatar.jpg 放在同個倉庫 */
+            background: url('avatar.jpg') no-repeat center center;
+            background-size: cover;
+            margin: 0 auto 18px auto;
+            border: 3px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 標題與簡介 */
+        .title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 12px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .bio {
+            font-size: 15px;
+            color: #f8f9fa;
+            line-height: 1.6;
+            margin-bottom: 28px;
+            white-space: pre-line;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        /* 連結按鈕清單 */
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 14px 20px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #1c352d;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        /* 按鈕內的 Icon 固定靠左，文字置中 */
+        .link-btn i {
+            font-size: 20px;
+            width: 30px;
+            text-align: center;
+        }
+
+        .link-btn span {
+            flex-grow: 1;
+            text-align: center;
+            margin-right: 30px; /* 平衡 Icon 的寬度達到真正置中 */
+        }
+
+        /* 各別 Icon 顏色優化 */
+        .fa-facebook { color: #1877F2; }
+        .fa-tiktok { color: #000000; }
+        .fa-youtube { color: #FF0000; }
+        .fa-instagram { color: #E1306C; }
+        .fa-threads { color: #000000; }
+        .fa-line { color: #06C755; }
+
+        /* 滑鼠懸停效果 */
+        .link-btn:hover {
+            background: #ffffff;
+            transform: translateY(-2.5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* LINE 聯絡我們特殊按鈕 */
+        .contact-btn {
+            margin-top: 8px;
+            background: rgba(6, 199, 85, 0.9);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .contact-btn:hover {
+            background: #05b34c;
+        }
+
+        .contact-btn .fa-line {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="avatar"></div>
+
+        <div class="title">晨屋農場 🍈</div>
+
+        <div class="bio">台中外埔，溫室栽培
+阿露斯哈密瓜，1株1粒
+節日禮盒送禮首選!!
+官方LINE : @yde6382m</div>
+
+        <div class="links-wrapper">
+            <a href="https://www.facebook.com/people/%E6%99%A8%E5%B1%8B%E8%BE%B2%E5%A0%B4/61590330897522/" target="_blank" class="link-btn">
+                <i class="fab fa-facebook"></i><span>晨屋農場 (Facebook)</span>
+            </a>
+            <a href="https://www.tiktok.com/@bohua1996" target="_blank" class="link-btn">
+                <i class="fab fa-tiktok"></i><span>晨屋農場 (TikTok)</span>
+            </a>
+            <a href="https://www.youtube.com/@Ye.Huag_0711" target="_blank" class="link-btn">
+                <i class="fab fa-youtube"></i><span>晨屋農場 (YouTube)</span>
+            </a>
+            <a href="https://www.instagram.com/chenwu_farm/" target="_blank" class="link-btn">
+                <i class="fab fa-instagram"></i><span>晨屋農場 (Instagram)</span>
+            </a>
+            <a href="https://www.threads.com/@chenwu_farm" target="_blank" class="link-btn">
+                <i class="fab fa-threads"></i><span>晨屋農場 (Threads)</span>
+            </a>
+            <a href="https://line.me/R/ti/p/@yde6382m" target="_blank" class="link-btn contact-btn">
+                <i class="fab fa-line"></i><span>聯絡我們</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
